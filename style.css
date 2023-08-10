@@ -1,0 +1,148 @@
+:root {
+  --bg-primary: #141c2f;
+  --bg-secondary: #1f2a48;
+  --clr-blue: #0079fe;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  width: 70px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  object-fit: cover;
+}
+body {
+  min-height: 100vh;
+  background-color: var(--bg-primary);
+  color: white;
+  padding: 2rem 1.5rem 60rem;
+}
+
+.bg__secondary {
+  background-color: var(--bg-secondary);
+}
+
+.flex {
+  display: flex;
+}
+
+.bradius {
+  border-radius: 15px;
+}
+
+svg {
+  width: 30px;
+  aspect-ratio: 1;
+}
+.logo {
+  margin-bottom: 0.8em;
+}
+
+.search__container {
+  margin-bottom: 1em;
+  padding: 0.7em;
+  padding-left: 1em;
+  align-items: stretch;
+  gap: 0.5em;
+
+  & > input {
+    background-color: transparent;
+    border: 0;
+    flex: 1 1 auto;
+
+    &::placeholder {
+      color: white;
+      letter-spacing: 1.5px;
+    }
+  }
+
+  & > button {
+    background-color: var(--clr-blue);
+    color: white;
+    border: 0;
+    padding: 1.2em;
+    font-size: 15px;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    border-radius: 10px;
+  }
+
+  & svg {
+    color: var(--clr-blue);
+  }
+}
+
+.profile__container {
+  padding: 2.5rem 1.5rem 3rem;
+
+  & .profile__header {
+    gap: 2em;
+    align-items: center;
+    margin-bottom: 3em;
+
+    & .profile__title {
+      & h2 {
+        margin-bottom: 0.2em;
+      }
+
+      & span {
+        display: inline-block;
+        margin-bottom: 0.5em;
+        color: var(--clr-blue);
+      }
+    }
+  }
+
+  & .profile__info {
+    letter-spacing: 1px;
+    line-height: 35px;
+  }
+
+  & .profile__count {
+    background-color: var(--bg-primary);
+    justify-content: space-evenly;
+    padding-block: 1.5em;
+    margin-block: 2em 1.5em;
+
+    & > div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+
+      & > h3 {
+        font-weight: 200;
+        font-size: 15px;
+        letter-spacing: 1px;
+        opacity: 0.8;
+      }
+
+      & > span {
+        font-weight: bold;
+        font-size: 25px;
+      }
+    }
+  }
+
+  & .profile__details {
+    list-style-type: none;
+
+    & > li {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 20px;
+
+      & .icon__twitter,
+      .icon__orgs {
+        fill: white;
+      }
+    }
+  }
+}
