@@ -145,4 +145,16 @@ svg {
       }
     }
   }
+  .link-container {
+    max-width: 100%; /* Adjust this value based on your layout */
+    display: flex;
+    /* align-items: center; */
+    
+    & .link {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      margin-right: 10px;
+    }
+  }
 }
