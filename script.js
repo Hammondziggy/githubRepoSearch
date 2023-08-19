@@ -14,8 +14,8 @@ button.addEventListener("click", async() => {
 
         // Show loading message
         loading.style.display = "block";
+        dataRes.style.display = "none";
 
-        //dataRes.style.display = "none";
         const response = await fetch(url);
 
         // Check if the response status is ok

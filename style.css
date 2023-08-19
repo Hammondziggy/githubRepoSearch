@@ -21,7 +21,7 @@ body {
   min-height: 100vh;
   background-color: var(--bg-primary);
   color: white;
-  padding: 2rem 1.5rem 60rem;
+  padding: 2rem 1.5rem 8rem;
 }
 
 .bg__secondary {
@@ -146,9 +146,8 @@ svg {
     }
   }
   .link-container {
-    max-width: 100%; /* Adjust this value based on your layout */
+    max-width: 100%; 
     display: flex;
-    /* align-items: center; */
     
     & .link {
       white-space: nowrap;
